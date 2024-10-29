@@ -1,7 +1,7 @@
-# BusAggregation - Django Backend
+# BusAggregator - Django Backend
 
 ## Overview
-**BusAggregation** is a web application that allows users to search for departures and arrivals from various transport carriers between different cities. The backend is built with Django.
+**BusAggregator** is a web application that allows users to search for departures and arrivals from various transport carriers between different cities. The backend is built with Django.
 
 ## Features
 - **Search for Routes**: Users can search for departures by providing:
@@ -60,10 +60,10 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-# BusAggregation - React Frontend
+# BusAggregator - React Frontend
 
 ## Overview
-**BusAggregation** is a web application that allows users to search for departures and arrivals from various transport carriers between different cities. The frontend is built with Django.
+**BusAggregator** is a web application that allows users to search for departures and arrivals from various transport carriers between different cities. The frontend is built with Django.
 
 ## Prerequisites
 
