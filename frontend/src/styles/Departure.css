@@ -1,0 +1,193 @@
+.search-form-container{
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    display: flex;
+}
+.search-form-input:first-child {
+    margin-left: 70px;
+}
+.search-form-input{
+    width: 200px;
+    padding: 10px;
+    margin: 30px 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.select-station{
+    width: 200px;
+    margin: 30px 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.search-form-input:first-child{
+    margin-left: 40px;
+}
+.search-button{
+    width: 200px;
+    padding: 10px;
+    margin: 30px 5px;
+    margin-right: 70px;
+    border: none;
+    border-radius: 5px;
+    background-color:#235471 ;
+    color: white;
+    cursor: pointer;
+}
+.departure-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.departure-li{
+    margin: 25px;
+    padding: 20px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform .1s; 
+}
+.departure-li:hover{
+    transform: scale(1.01);
+}
+.departure-ul{
+    list-style-type: none;
+    margin:0px;
+    padding:0px;
+}
+h3{
+    color:#235471;
+    margin-left: 5%;
+
+}
+.results-container{
+    display: flex;
+}
+
+.map-container{
+    margin-top: 60px;
+}
+.carrier-provider-titles{
+    display: flex;
+    justify-content: space-between;
+}
+.carrier-provider-titles h3{
+    margin-left: 0;
+}
+
+.departure-date-times-info{
+    margin: 10px 0px;
+}
+
+.seats-info{
+    display: flex;
+    justify-content: space-between;
+}
+#google-map{
+    width: 600px; 
+    height: 700px; 
+    border: 2px solid #000;
+    border-radius: 15px;
+}
+.results-container{
+    width: 60%;
+}
+.time-input{
+    width: 90px;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 10px;
+}
+.duration-input{
+    width: 90px;
+    border: 1px solid #ccc;
+    height: 30px;
+    border-radius: 10px;
+}
+@media (max-width: 2000px){
+    .results-container{
+        width: 80%;
+    }
+}
+@media (max-width: 1750px){
+
+    .results-container{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .departure-search-results {
+        order: 2; 
+    }
+    
+    .map-container {
+        order: 1; 
+    }
+    #google-map{
+        width: 1100px;
+    }
+}
+.departure-search-results {
+    width: 90%;
+}
+
+
+@media (max-width: 1160px) {
+    .search-form-container {
+        flex-direction: column;
+    }
+    .search-form-input{
+        margin: 0px 60px;
+        width: 400px;
+    }
+    .search-form-input:first-child {
+        margin: 50px 60px 50px 60px;
+    }
+    .search-button{
+        margin: 50px 60px 50px 60px;
+        width: 400px;
+    }
+    .select-station{
+        margin: 0px 60px 50px 60px;
+        width: 400px;
+    }
+    #google-map{
+        width: 400px;
+    }
+    .duration-input{
+        width: 30px;
+    }
+    
+}
+
+.filter-container{
+    margin: 0px 25px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.11);
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+
+.select-carrier{
+    width: 140px;
+    margin: 10px 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.apply-filter-button{
+    background-color: #235471;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border:none;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}

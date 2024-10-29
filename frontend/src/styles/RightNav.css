@@ -1,0 +1,35 @@
+.options-container {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    z-index: 10;
+}
+  
+.options-container li {
+    padding: 18px 10px;
+}
+
+@media (max-width: 930px) {
+    .options-container {
+        flex-flow: column nowrap;
+        background-color: #235471;
+        margin-top: 8px;
+        position: fixed;
+        transform: translateX(100%);
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 300px;
+        padding-top: 100px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .options-container.open {
+        transform: translateX(0);
+    }
+
+    .options-container li {
+        color: #fff;
+    }
+}
+  

@@ -1,0 +1,37 @@
+.main-container-user-dep{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.google-map-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.search-user-route-button{
+    width: 50%;
+    padding: 12px;
+    margin: 20px 0px;
+    border: none;
+    border-radius: 7px;
+    background-color:#235471 ;
+    color: white;
+    cursor: pointer;
+}
+.departure-li h3{
+    margin: 15px 0px;
+    margin-top: 0px;
+}
+
+@media (max-width: 1750px){
+
+    .user-departures-container {
+        order: 2; 
+    }
+    
+    .map-container {
+        order: 1; 
+    }
+
+}

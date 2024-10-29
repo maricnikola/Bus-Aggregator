@@ -1,0 +1,12 @@
+Django
+djangorestframework
+django-cors-headers
+djangorestframework-simplejwt
+six
+pillow
+python-decouple
+channels
+pydantic
+channels_redis
+daphne
+psycopg2

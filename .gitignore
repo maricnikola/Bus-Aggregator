@@ -1,0 +1,15 @@
+!.vscode
+node_modules
+*.vsix
+out
+yarn.lock
+package-lock.json
+.venv
+.env
+**/__pycache__
+.vscode-test/
+.vscode-test-web/
+db.sqlite3
+.session.sql
+.MyPostgresConnection.session.sql
+./logos/

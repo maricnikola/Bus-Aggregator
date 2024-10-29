@@ -1,0 +1,13 @@
+{% extends "admin/change_form.html" %}
+{% load static %}
+
+{% block extrahead %}
+    {{ block.super }}
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ AIzaSyBDPmV3s1MvOKVt1paSvrYhwlPmNloAOwE }}"></script>
+    <script src="{% static 'busstations/js/map.js' %}"></script>
+{% endblock %}
+
+{% block after_related_objects %}
+    {{ block.super }}
+    <div id="map" style="width: 100%; height: 400px;"></div>
+{% endblock %}

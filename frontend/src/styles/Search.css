@@ -1,0 +1,181 @@
+.search{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 1200px;
+}
+
+.filter-results{
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    margin-bottom: 0;
+    height: 900px;
+}
+
+.filters {
+    flex: 0 0 200px; /* širina filtera */
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.h2-filters{
+    text-align: center;
+}
+
+.search-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.search-fields input, .search-fields select {
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #dddddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.search-fields input:focus, .search-fields select:focus {
+    border-color: #007bff; /* Promena boje kada je polje aktivno */
+}
+
+.button-search-page {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #235471;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.button-search-page:hover {
+    background-color: #0056b3; /* Tamnija nijansa pri hover-u */
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 1000px;
+    flex: 1; /* da popuni ostatak prostora */
+    margin-left: 20px; /* razmak između filtera i rezultata */
+    overflow-y: auto; /* Skrolovanje rezultata */
+    justify-content: flex-start;
+    padding-bottom: 70px; /* Prilagodi prema visini paginacije */
+    position: relative;
+    min-height: 500px;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.results li {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.results a {
+    color: #235471;
+    text-decoration: none;
+}
+
+.results a:hover {
+    text-decoration: underline;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Razmak između dugmića */
+    margin-top: 20px; /* Razmak između paginacije i liste rezultata */
+}
+
+.pagination-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centriranje dugmića i natpisa */
+    background-color: white;
+    padding: 10px 0;
+}
+
+.pagination-buttons .button-container {
+    display: flex;
+    flex-direction: row; /* Dugmići u istoj liniji */
+    justify-content: center;
+    gap: 10px; /* Razmak između dugmića */
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.popup {
+    position: absolute;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    top: -150%; /* Pozicija iznad kartice, prilagodite vrednost po potrebi */
+    left: 50%;
+    transform: translateX(-50%); /* CEntriranje pop-up-a iznad kartice */
+}
+
+.popup-content {
+    position: relative; /* Za pozicioniranje close dugmeta */
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: red; /* Promena boje kada se pređe mišem */
+}

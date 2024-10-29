@@ -1,0 +1,73 @@
+.main-container{
+  min-height: 660px;
+}
+
+h1, h2,h4{
+    color: #235471;
+    font-family: 'Roboto', sans-serif;
+
+}
+.location-container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+  }
+.input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.location-input{
+  width: 47%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+  
+.form-button {
+  width: 90%;
+  padding: 10px;
+  margin: 20px 0;
+  background-color: #235471;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+  
+.text-bellow-login{
+  display: flex;
+}
+.text-bellow-login > *{
+  padding: 5px;
+}
+
+.text-bellow-login > p:nth-child(2){
+  color: #235471;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+}
